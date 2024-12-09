@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(211, 211, 211);
+    scroll-behavior: smooth;
+}
+.pricing-menu{
+    background-color: white;
+    width: 70%;
+    margin: 70px auto;
+    padding :20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.pricing_table{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    grid-template-rows: minmax(200px,400px);
+}
+.pricing_card{
+    background-color: rgb(241, 240, 240);
+    padding: 20px 10px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 10% 10% 80%;
+}
+.items-menu li{
+    text-align: left;
+    /* list-style: none; */
+    font-size: 0.7em;
+}
+.items-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.pricing_card:hover{
+    background-color: rgb(41, 40, 40);
+    transition: 0.5s ease-in-out;
+    color: white;
+}
